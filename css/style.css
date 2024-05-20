@@ -1,0 +1,25 @@
+body{
+   background-color: rgb(107, 107, 241); /* Muda a cor de fundo  */
+}
+header{
+    color: white; /*Muda a cor da font*/
+    text-align: center; /*Centraliza*/
+}
+section{
+    background: white; 
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.368);
+
+}
+div{
+    text-align: center;
+    padding: 8px;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
