@@ -1,9 +1,17 @@
 function carregar(){
-    const img = document.getElementById('imagem')
-    const data = new Date()
-    const hora = data.getHours()
-    const minutos = data.getMinutes()
-    const segundos = data.getSeconds()
+    let img = document.getElementById('imagem')
+    let data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
+    let segundos = data.getSeconds()
+
+    if (segundos < 10){
+        segundos = "0" + segundos
+    }
+
+    if (minutos < 10){
+        minutos = "0" + minutos
+    }
 
     if (hora >=5 && hora < 12){
         // BOM DIA!
@@ -19,7 +27,8 @@ function carregar(){
         document.body.style.background = '#9678ac'
     }
 
-    
+ 
+
    
     document.getElementById("msg").innerHTML = `${hora}:${minutos}:${segundos}`
 

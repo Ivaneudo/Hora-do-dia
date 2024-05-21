@@ -1,26 +1,32 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body{
    background-color: rgb(107, 107, 241); /* Muda a cor de fundo  */
 }
 header{
     color: white; /*Muda a cor da font*/
     text-align: center; /*Centraliza*/
+    margin-top: 90px;
 }
-section{
+div#fundo{
     background: white; 
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
-    height: 300px;
+    height: 350px;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.368);
 
 }
 div{
     text-align: center;
     padding: 8px;
-}
-footer{
-    color: white;
-    text-align: center;
-    font-style: italic;
 }
