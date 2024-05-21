@@ -1,10 +1,11 @@
 function carregar(){
-    var msg = document.getElementById('msg')
-    var img = document.getElementById('imagem')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas!`
-    if (hora >=0 && hora < 12){
+    const img = document.getElementById('imagem')
+    const data = new Date()
+    const hora = data.getHours()
+    const minutos = data.getMinutes()
+    const segundos = data.getSeconds()
+
+    if (hora >=5 && hora < 12){
         // BOM DIA!
         img.src = 'img/manha.jpg'
         document.body.style.background = '#fde4c6'
@@ -17,5 +18,11 @@ function carregar(){
         img.src = 'img/noite.jpg'
         document.body.style.background = '#9678ac'
     }
+
+    
+   
+    document.getElementById("msg").innerHTML = `${hora}:${minutos}:${segundos}`
+
+    setInterval("carregar()", 1000)
 }
 
