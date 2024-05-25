@@ -7,7 +7,7 @@ body{
 }
 header{
     color: white; /*Muda a cor da font*/
-    text-align: center; /*Centraliza*/
+    text-align: center; /*Centraliza o texto*/
     margin-top: 90px;
 }
 div#fundo{
@@ -29,4 +29,15 @@ div#fundo{
 div{
     text-align: center;
     padding: 8px;
+}
+
+@media (max-height: 758px){
+    div#fundo{
+        width: 350px;
+        height: 400px;
+        padding: 20px;
+    }
+    header{
+        margin-top: 65px;
+    }
 }
