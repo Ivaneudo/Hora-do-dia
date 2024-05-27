@@ -32,6 +32,6 @@ function carregar(){
    
     document.getElementById("msg").innerHTML = `${hora}:${minutos}:${segundos}`
 
-    setInterval("carregar()", 1000)
+    setInterval("carregar()", 100)
 }
 
