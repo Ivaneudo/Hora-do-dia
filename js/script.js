@@ -28,7 +28,6 @@ function carregar(){
     }
 
  
-
    
     document.getElementById("msg").innerHTML = `${hora}:${minutos}:${segundos}`
 
